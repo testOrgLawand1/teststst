@@ -1,6 +1,6 @@
 name: Always Fail Workflow
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   always_fail:
