@@ -1,0 +1,14 @@
+name: Always Fail Workflow
+
+on: [push, pull_request]
+
+jobs:
+  always_fail:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Deliberate Failure
+        run: exit 1
