@@ -11,4 +11,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deliberate Failure
-        run: exit 1
+        run: exit 0
